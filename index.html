@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@300;400;700;800&family=Poppins:wght@300&family=Roboto:wght@300&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <title>Las dos H</title>
+   <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    height: 80vh;
+    *background-image: linear-gradient(to top, rgba(251, 193, 234, 0.945) 0%, rgba(166, 192, 238, 0.798) 100%);
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    left:  30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.nav-navegacion{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    flex-direction: column;
+    align-items: center;
+   /* transition: transform .3 ease-in-out;*/
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+header:hover .nav-navegacion{
+   * transform: translate(110%);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.nav-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+.contactMovil img{
+    width: 40px;
+    position: fixed;
+    top: 30px;
+    right:  30px;
+    height: 40px;
+    cursor: pointer;
+    filter: invert();
+ 
+}
+
+}
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 400;
+    font-size: 60px;
+}
+.about{
+    font-size: 30px;
+    color: #330867;
+}
+
+.subtitulo{
+    text-align:center;
+    font-weight: 300;
+    color: #330867;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 40%;
+
+}
+.ilustracion-servicio{
+    width: 45%;
+}
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #503888;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #958dc2 0%, #1b0338f4 100%);
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 7px;
+}
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 100px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    *flex-wrap: wrap;
+    background: #330867;
+}
+
+.cont-expert{
+   *width: 20px;
+   *align-items: center;
+   *margin-bottom: 10px; 
+   
+}
+ 
+   </style>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/bx-menu.svg" alt="" class="hamburguer">
+        <nav class="nav-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="Portafolio">Portafolio</a>
+            <a href="blog">blog</a>
+            <a href="servicio">Servicio</a>
+            <a href="contacto">Contactos</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Bienvenidos a curso</h1>
+            <h2 class="copy">las dos H</h2>
+            <p class="about">Tu eliges cuando y donde aprender</p>
+        </div>
+        <div class="search">
+            <figure id="contact" class="contactMovil">
+               <img src="img/contacto.png" alt="contacto">
+            </figure>
+       </div>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestros cursos</h2>
+            <div class="contenedor-servicio">
+                <img src="img/ilustracion-svg.svg" alt="">
+                <div class="ilustracion-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">*</span>Programacion 
+                            para principiantes</h3>
+                        <p>Aplicando las etiquetas y elementos básicos de manera correcta, comprendiendo la estructura y sintaxis del código HTML y CSS</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">*</span>HTML
+                            principiantes</h3>
+                            <p> los estudiantes serán capaces de crear y diseñar páginas web utilizando el lenguaje de marcado HTML</p>
+
+                        </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">*</span>CSS
+                            principiantes</h3>
+                            <p>Introducción a CSS (Cascading Style Sheets) para dar estilo y diseño a tu página web, cambiando colores, fuentes, márgenes y otros aspectos visuales. </p>
+
+                        </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Qué deseas aprender</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/img1.jpg" alt="" class="img-galeria">
+                    <img src="img/img2.jpg" alt="" class="img-galeria">
+                    <img src="img/img3.jpg" alt="" class="img-galeria">
+                    <img src="img/img4.jpg" alt="" class="img-galeria">
+                    <img src="img/html.png" alt="" class="img-galeria">
+                    <img src="img/html 2.png" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <!--<section class="imagen light">
+            <img src="img/exit.png" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </section>-->
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitilo">Comentarios</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/ilustracion-svg1.svg" alt="">
+                    <h3 class="n-expert">Analytics</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/ilustracion-svg-html2.svg" alt="">
+                    <h3 class="n-expert">Analytics</h3>
+                </div> <div class="cont-expert">
+                    <img src="img/ilustracion-svg-html.svg" alt="">
+                    <h3 class="n-expert">SUCURYTI</h3>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer id="contacto">
+        <div class="contendor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Cursos las dos H</h2>
+                <P>Tu eliges como y cuando estudiar</P>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i> 
+                </a>
+                <a href="./" class="social-media-icon">
+                     <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+            </div>
+        </div>
+
+    </footer>
+    
+        
+        
+<script src="js/"></script>
+</body>
+</html>
