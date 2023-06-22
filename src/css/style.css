@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Libre Baskerville', serif;
+   font-family: 'Libre Baskerville', serif;
 font-family: 'Open Sans', sans-serif;
 
 }
@@ -24,6 +24,8 @@ font-family: 'Open Sans', sans-serif;
 header{
     height: 80vh;
     /*background-image: linear-gradient(to top, rgba(251, 193, 234, 0.945) 0%, rgba(166, 192, 238, 0.798) 100%);*/
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
 }
 
 .head{
@@ -82,9 +84,7 @@ header{
     
  
 }
-.headre{
-    background: #eb0f29;
-}
+
 
 .titulo{
     font-size: 60px;
@@ -94,29 +94,50 @@ header{
 
 .header-programacion{
     height: 90vh;
-    background: #eb0f29;
+    background: white;
 }
-.header-programacion .logo {
+
+     
+    
+
+.logo {
     font-size: 20px;
-    font-weight: 200;
-    color: #eb0f29;
+    font-weight: 300;
     flex-direction: column;
+    position: fixed;
+    top: 30px;
+    left:  80px;
+   cursor: pointer;
+
+   
 }
 
 .logo2{
     font-size: 20px;
-    font-weight: 200;
-    color: #eb0f29;  
+    font-weight: 300;
+    position: fixed;
+    top: 50px;
+    left:  90px;
+   cursor: pointer;
+
+
 }
 .logoh{
 
     font-family:fantasy ;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 40px;
     color: #503888;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    position: fixed;
+    top: 20px;
+    left:  130px;
+   cursor: pointer;
 
 }
-.copy{
+    .copy{
     font-weight: 400;
     font-size: 60px;
 }
