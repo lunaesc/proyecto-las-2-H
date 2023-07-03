@@ -98,7 +98,7 @@ span{
     color: purple;
 }
 .header-programacion{
-    height: 90vh;
+    height: 60vh;
     background: white;
 }
 
@@ -157,7 +157,7 @@ span{
     text-align:center;
     font-weight: 300;
     color: #330867;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 40px;
 }
 .contenedor-servicio{
@@ -172,6 +172,9 @@ span{
 }
 .ilustracion-servicio{
     width: 45%;
+    border: 1px solid #f2f2f2;
+  
+
     
 }
 .service{
@@ -181,9 +184,30 @@ span{
 .n-service{
     margin-bottom: 7px;
     color: #503888;
-}
 
-.number{
+}
+/*.imagen-port .contenido-card2 a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}*/
+.n-service a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+     width: 100%;
+}
+.n-service a:hover{
+    background: #503888;
+    color: #fff;
+}
+/*.number{
     display: inline-block;
     background-image: linear-gradient(to top, #958dc2 0%, #1b0338f4 100%);
     width: 20px;
@@ -194,9 +218,9 @@ span{
     font-weight: 700;
     line-height: 30px;
     margin-right: 7px;
-}
+}*/
 .gallery{
-    background: #f2f2f2;
+    background: #fff;
 }
 
 .contenedor-galeria{
