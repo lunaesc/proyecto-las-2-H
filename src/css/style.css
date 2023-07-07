@@ -49,7 +49,7 @@ header{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 .nav-navegacion{
-    
+    padding: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,6 +69,12 @@ header{
 .spread{
     transform: translate(0);
 }
+.nav-navegacion ul li{
+    position: fixed;
+    
+    
+    padding: 10px;
+}
 
 .nav-navegacion a{
     color: black;
@@ -84,6 +90,15 @@ header{
     
  
 }
+.contenedor-menu{
+    width: 100%;
+    height: 100px;
+    background: grey;
+    position: fixed;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
 
 
 .titulo{
@@ -131,7 +146,7 @@ span{
 }
 .logoh{
 
-    font-family:fantasy ;
+   
     font-weight: 300;
     font-size: 40px;
     color: purple;
@@ -429,6 +444,13 @@ span{
 .contenedor-modulos .navbar ul li:focus-within > ul ,
 .contenedor-modulos .navbar ul li:hover > ul{
     display: initial;
+}
+
+.drop {
+    margin-left: 90%;
+    width: 50px;
+
+    
 }
 /*.contenedor-progra{
     height: 100%;
