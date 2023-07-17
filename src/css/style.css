@@ -13,12 +13,27 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+.contenefdor-main{
+    background: #503888;
+    height: 50vh;
+    margin: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .contenedor{
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
-    margin: auto;
+    margin: 15vh ;
     padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(228, 229, 225);
    
 }
 header{
