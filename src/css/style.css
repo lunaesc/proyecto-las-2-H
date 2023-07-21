@@ -105,26 +105,27 @@ header{
 
 .contenedor-menu img{
     width: 35px;
-    position: fixed;
+    position: absolute;
     display: flex;
-    top: 2.1rem;
-    right: 2em;
+    top: -10px;
+    right: 0.5px;
     cursor: pointer;
 
 }
 
-.contenedor-menu{
+
+.header-programacion{
     width: 100%;
-    height: 90px;
+    height: 30vh;
     position: relative;
-    background: #d98394;
-    position: fixed;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2) ;
     z-index: 1000;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background:#fff;
+
 }
 
 .contenedor-menu .nav-menu-visible{
@@ -144,13 +145,14 @@ header{
 .contenedor-menu .nav-menu-visible ul li a{
     text-decoration: none;
     color: rgb(67, 55, 55);
-    padding: 0 15px;
-    padding-left: 30px;
+    padding: 0 20px;
+    padding-left: 20px;
 }
 
 .contenedor-menu .nav-menu-visible ul li a:hover{
     color: purple;
     border-bottom: 5px solid purple;
+    
 
 }
 
@@ -167,10 +169,10 @@ span{
     font-family: 'Pacifico', cursive; 
     color: purple;
 }
-.header-programacion{
+/* .header-programacion{
     height: 30vh;
-    background: rgb(100, 147, 155);
-}
+    background:red;
+} */
 
      
     
@@ -228,7 +230,9 @@ span{
     font-weight: 300;
     color: #330867;
     margin-bottom: 0px;
+
     font-size: 40px;
+    
 }
 .contenedor-servicio{
     display: flex;
@@ -271,7 +275,7 @@ span{
     text-decoration: none;
     display: inline-block;
     padding: 10px;
-     width: 100%;
+    width: 100%;
 }
 .n-service a:hover{
     background: #503888;
@@ -308,7 +312,7 @@ span{
     height: 250px;
     background: #f2f2f2;
     margin: 20px;
-  
+    
     position: relative;
     cursor: pointer;
     border-radius: 10px;
@@ -331,28 +335,29 @@ span{
     padding: 15px;
 }
 .imagen-port .contenido-card2 p{
-    line-height: 1;
+    
     color: #6a6a6a;
 }
 
 .imagen-port .contenido-card2 h2{
     font-weight: 400;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
 .imagen-port .contenido-card2 a{
   text-decoration: none;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
   color: #2fb4cc;
-  border: 1px solid #2fb4cc;
+  border: 1px solid #91aeb4;
   border-radius: 4px;
   transition: all 400ms ease;
 }
 
 .imagen-port .contenido-card2 a:hover{
-    background: #2fb4cc;
+    background: #a8c1c5;
     color: #fff;
 }
 /*.imagen-port{
@@ -489,7 +494,7 @@ span{
 
 
 .contenedor-modulos .navbar ul li ul li{
-    background: #a39fad;
+    background: #f7f0ee;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
